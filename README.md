@@ -1,9 +1,19 @@
 # ScharfSandhi
-Software to apply sandhi to Sanskrit text.
 
+_Created: 23-05-2015 · Last updated: 11-07-2026_
+
+Software to apply sandhi (euphonic combination) to Sanskrit text encoded in the
+SLP1 transliteration scheme.
+
+> **Fork provenance.** This is [`gasyoun/ScharfSandhi`](https://github.com/gasyoun/ScharfSandhi),
+> a fork of the upstream [`funderburkjim/ScharfSandhi`](https://github.com/funderburkjim/ScharfSandhi)
+> maintained within the [Sanskrit Lexicon](https://github.com/sanskrit-lexicon)
+> ecosystem. The substantive README below is the original author's (Jim
+> Funderburk, first person); this fork adds only the header, links, and
+> provenance note. Report code issues upstream.
 
 ## History
-Approximately in 1992-2000, Peter Scharf [sanskritlibrary.org](http://sanskritlibrary.org/) wrote a computer program in the Pascal language to 'do sandhi'. This is the base form of the sandhi programs in this repository. See also
+Approximately in 1992-2000, Peter Scharf ([sanskritlibrary.org](http://sanskritlibrary.org/)) wrote a computer program in the Pascal language to 'do sandhi'. This is the base form of the sandhi programs in this repository. See also
 [paniniSandhi](http://sanskritlibrary.org/software/paniniSandhi.html).
 
 In 2009, I (Jim Funderburk) translated the Pascal programs to first Perl and
@@ -14,10 +24,10 @@ Currently, I do not know how to run the original Pascal program;  the
 translated programs work in current computer environments.
 
 ## Descriptions of Directories
-* `PMSPascal` contains Scharf's Pascal programs, as a collection of 6 files,
+* [`PMSpascal`](https://github.com/gasyoun/ScharfSandhi/tree/master/PMSpascal) contains Scharf's Pascal programs, as a collection of 6 files,
    with two versions of one of the files.
 
-* `perl` contains the translation to Perl:
+* [`perl`](https://github.com/gasyoun/ScharfSandhi/tree/master/perl) contains the translation to Perl:
   * sandhi.pm is the Perl module containing the translation of all of 
     Scharf's Pascal code.
   * scharfsandhitest.pl contains a program used for testing sandhi.pm
@@ -25,7 +35,7 @@ translated programs work in current computer environments.
     test program using the files in the `testfiles` directory (see below)
   * testlog.txt shows the stdout output of testsuite.sh
 
-* `java` contains the translation to Java:
+* [`java`](https://github.com/gasyoun/ScharfSandhi/tree/master/java) contains the translation to Java:
   * ScharfSandhi.java is the Java source code for the Java class containing
     a translation of Pascal code.
   * ScharfSandhiTest.java, testsuite.sh, and testlog.txt are Java versions as
@@ -35,13 +45,13 @@ translated programs work in current computer environments.
   * ScharfSandhiString.java is a second simple command-line program, that
     applies compound sandhi and then external sandhi to an input string
 
-* `Python` contains the translation to Python.
+* [`python`](https://github.com/gasyoun/ScharfSandhi/tree/master/python) contains the translation to Python.
   * scharfsandhi.py is the Python module.  It was generated from the Java code.
   * ScharfSandhiTest.py, testlog.txt, and testsuite.sh are Python analogs of 
     the tests, as described above.
   * ScharfSandhiArg.py is the Python analogue of ScharfSandhiArg.java.
 
-* `testfiles`  contains 4 pairs of files. In each pair of files, the two
+* [`testfiles`](https://github.com/gasyoun/ScharfSandhi/tree/master/testfiles)  contains 4 pairs of files. In each pair of files, the two
    files contain the same number of lines; when sandhi is applied to a line
    of the first file, the result should be the corresponding line of the
    second file.  Also, as discussed below, some details of sandhi application
@@ -147,7 +157,7 @@ the Python version.
 
 ### August/Sep 2015 pythonv4 
 
-Directories pythonv1, pythonv2, pythonv3 and pythonv4 refine the Python
+Directories [`pythonv1`](https://github.com/gasyoun/ScharfSandhi/tree/master/pythonv1), [`pythonv2`](https://github.com/gasyoun/ScharfSandhi/tree/master/pythonv2), [`pythonv3`](https://github.com/gasyoun/ScharfSandhi/tree/master/pythonv3) and [`pythonv4`](https://github.com/gasyoun/ScharfSandhi/tree/master/pythonv4) refine the Python
 version.  The versions in pythonv1, pythonv2, and pythonv3 are created by
 a 'refactor' program.  The intentions are:
 * reposition the comments which the java2python conversion misplaced
@@ -281,5 +291,11 @@ The `Sanskrit Manual` by Roderick Bucknell succinctly describes external
 sandhi rules in a tabular form that facilitates comparison.  Programs were
 developed to do this comparison.  With very few exceptions, the analysis
 shows that scharfsandhi.py computes results identical to those of Bucknell.  
-See the [bucknell readme](https://github.com/funderburkjim/ScharfSandhi/tree/master/pythonv4/scharfsandhi_bucknell.md) for a description of the analysis.
+See the [bucknell readme](https://github.com/gasyoun/ScharfSandhi/blob/master/pythonv4/scharfsandhi_bucknell.md) for a description of the analysis.
+
+---
+
+_Original code and README by Jim Funderburk (funderburkjim), based on Peter
+Scharf's Pascal program; MIT licensed. Fork maintained for the Sanskrit Lexicon
+ecosystem by Dr. Mārcis Gasūns._
 
