@@ -1,3 +1,5 @@
+_Created: 06-09-2015 · Last updated: 05-09-2026_
+
 # Compare scharfsandhi and Bucknell
 Reference: Sanskrit Manual: A Quick Reference Guide to Phonology and Grammar of Classical Sanskrit  by Roderick S. Bucknell.
 
@@ -485,4 +487,4 @@ python ScharfSandhiTest2.py bucknell/vowel_test2.txt > bucknell/log_vowel_test2.
 ```
 The adjustment for E2 sandhi option is done with no interference to any other sandhi options.
 
-
+_Dr. Mārcis Gasūns_

@@ -299,3 +299,4 @@ _Original code and README by Jim Funderburk (funderburkjim), based on Peter
 Scharf's Pascal program; MIT licensed. Fork maintained for the Sanskrit Lexicon
 ecosystem by Dr. Mārcis Gasūns._
 
+_Dr. Mārcis Gasūns_
